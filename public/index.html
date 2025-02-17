@@ -14,12 +14,12 @@
         <p>Launch Faster. Build Smarter.</p>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
             </ul>
         </nav>
-        <button onclick="loginWithGoogle()">Login with Google</button>
+        <button id="loginBtn">Login with Google</button>
     </header>
     
     <main>
@@ -57,15 +57,20 @@
         
         <section id="cta">
             <h2>Start Building Your MVP Today</h2>
-            <button onclick="loginWithGoogle()">Get Started for Free</button>
+            <button id="loginBtn2">Get Started for Free</button>
         </section>
     </main>
     
     <footer>
         <p>MVP.CEO © 2025 - AI-Powered Startup Execution</p>
         <nav>
-            <a href="/about">About</a> | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a>
+            <a href="about.html">About</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
         </nav>
     </footer>
+    
+    <script>
+        document.getElementById("loginBtn").addEventListener("click", loginWithGoogle);
+        document.getElementById("loginBtn2").addEventListener("click", loginWithGoogle);
+    </script>
 </body>
 </html>
