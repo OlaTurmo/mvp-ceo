@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MVP.CEO - AI-Powered MVP Tracking & Execution. Build, track, and launch your MVP smarter and faster with AI-driven insights.">
     <title>MVP.CEO - AI-Powered MVP Development</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
     <script type="module" src="firebase-config.js"></script>
     <script type="module" src="analytics.js"></script>
 </head>
@@ -25,7 +27,7 @@
     <main>
         <section id="features">
             <h2>Why Choose MVP.CEO?</h2>
-            <ul>
+            <ul class="feature-list">
                 <li>📊 <strong>AI Insights</strong> - Get AI-powered recommendations for your MVP.</li>
                 <li>👥 <strong>Team Collaboration</strong> - Work with your co-founders and team members in real-time.</li>
                 <li>📈 <strong>MVP Comparison</strong> - Compare your MVP's potential against market trends.</li>
@@ -37,7 +39,7 @@
         
         <section id="how-it-works">
             <h2>How It Works</h2>
-            <ol>
+            <ol class="how-it-works-list">
                 <li>💡 <strong>Create an MVP</strong> - Define your startup idea and let AI guide you.</li>
                 <li>📌 <strong>Track Progress</strong> - Use our real-time tracking dashboard.</li>
                 <li>🚀 <strong>Optimize with AI</strong> - Get automated recommendations to improve success.</li>
@@ -69,8 +71,8 @@
     </footer>
     
     <script>
-        document.getElementById("loginBtn").addEventListener("click", loginWithGoogle);
-        document.getElementById("loginBtn2").addEventListener("click", loginWithGoogle);
+        document.getElementById("loginBtn").addEventListener("click", () => loginWithGoogle());
+        document.getElementById("loginBtn2").addEventListener("click", () => loginWithGoogle());
     </script>
 </body>
 </html>
